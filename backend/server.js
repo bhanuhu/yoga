@@ -7,12 +7,7 @@ const app = express()
 const abc=process.env.MONGO_URI
 const port=process.env.PORT_URI
 app.use(express.json())
-app.use(bodyParser.json({limit: '50mb'}));
-app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
-app.use((req,res,next)=>{
-    console.log(req.path,req.method)
-    next()
-})
+
 app.use("/",rout)
 
 mongoose.connect(abc)

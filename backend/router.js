@@ -3,7 +3,7 @@ const route=express.Router()
 const mongoose=require('mongoose')
 const Model=require('./schema/abcModel')
 
-route.post("/signup", async (req,res)=>{
+route.post("/api/signup", async (req,res)=>{
     const {name, phone,age,timing,month}=req.body
     try{
         const abc=  new Model({name, phone,age,month,timing})

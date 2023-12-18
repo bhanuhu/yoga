@@ -30,7 +30,7 @@ const Bottom=()=>{
         if(isempty ===false){
         e.preventDefault();
         const myJSON = { "name": values1.name, "age": age, "phone": mobile,"timing":values1.timing,"month":values1.month};
-        fetch('/signup', {
+        fetch('/api/signup', {
             method: "POST",
             headers: {
             'Content-type': 'application/json'
@@ -62,11 +62,11 @@ const Bottom=()=>{
         <Stack>
             <Stack direction="row" sx={{mt:2}} >
                 <Typography sx={{mr:5,mt:2}}>Name:</Typography>
-                <TextField id="name" label="Name" name="name" required onChange={signup} variant="outlined"  value={values1.name}  />
+                <TextField id="name" sx={{minWidth:220}} label="Name" name="name" required onChange={signup} variant="outlined"  value={values1.name}  />
             </Stack>
             <Stack direction="row" sx={{mt:2}}>
                 <Typography sx={{mr:7,mt:2}}>Age:</Typography>
-                <TextField id="age" label="Age" type="number" required name="age"  onChange={(e) => {
+                <TextField id="age" sx={{minWidth:220}} label="Age" type="number" required name="age"  onChange={(e) => {
                     setage(e.target.value);
                     setpayment(false)
                     if (e.target.value>65 || e.target.value<18)
@@ -78,7 +78,7 @@ const Bottom=()=>{
             <Stack sx={{mr:70 ,color:"red"}}>{isError1 ? "Required age is 18-65" : "" }</Stack>
             <Stack direction="row" sx={{mt:2}}>
                 <Typography sx={{mr:5,mt:2}}>Phone:</Typography>
-                <TextField id="phone" label="Phone" type="number" required name="phone" onChange={(e) => {
+                <TextField id="phone" sx={{minWidth:220}} label="Phone" type="number" required name="phone" onChange={(e) => {
                     setmobile(e.target.value);
                     setpayment(false)
                     if (!pattern.test(e.target.value))
@@ -90,7 +90,7 @@ const Bottom=()=>{
             <Stack sx={{mr:70,color:"red"}}>{isError ? "Mobile Number is Invalid" : "" }</Stack>
             <Stack direction="row" sx={{mt:2}}>
                 <Typography sx={{mr:6.25    ,mt:2}}>Fees:</Typography>
-                <TextField id="fee" label="Rs. 500" name="fee"  disabled variant="outlined" value={values1.fee} />
+                <TextField sx={{minWidth:220}}id="fee" label="Rs. 500" name="fee"  disabled variant="outlined" value={values1.fee} />
             </Stack>
             <Stack direction="row" sx={{mt:2}}>
                 <Typography sx={{mr:5,mt:2}}>Timing:</Typography>
@@ -104,8 +104,8 @@ const Bottom=()=>{
                   name="timing"
                   required
                   default={"6AM - 7AM"}
-                  fullWidth
-                  sx={{mr:78 , textAlign:"left"}}
+                  
+                  sx={{mr:78 , textAlign:"left",minWidth:220}}
                 >
                   <MenuItem value={10}>6AM - 7AM</MenuItem>
                   <MenuItem value={20}>7AM - 8AM</MenuItem>
@@ -125,8 +125,8 @@ const Bottom=()=>{
                   name="month"
                   required
                   default={1}
-                  fullWidth
-                  sx={{mr:78,ml:-1, textAlign:"left"}}
+                  
+                  sx={{mr:78,ml:-1, textAlign:"left",minWidth:220}}
                 >
                   <MenuItem value={1}>January</MenuItem>
                   <MenuItem value={2}>February</MenuItem>
