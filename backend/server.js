@@ -5,6 +5,7 @@ const bodyParser= require("body-parser");
 const rout=require('./router')
 const app = express()
 const abc=process.env.MONGO_URI
+const port=process.env.PORT_URI
 app.use(express.json())
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
@@ -16,7 +17,7 @@ app.use("/",rout)
 
 mongoose.connect(abc)
 .then(()=>{
-    app.listen(5050,()=>{
+    app.listen(port,()=>{
         console.log("listenig at http://localhost:5050/")
         
     })
