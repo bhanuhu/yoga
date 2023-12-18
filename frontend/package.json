@@ -2,7 +2,7 @@
   
 
 
-  "proxy": "http://localhost:5050",
+  "proxy": "https://yoga-770i.onrender.com",
   "name": "yoga",
   "version": "0.1.0",
   "private": true,
