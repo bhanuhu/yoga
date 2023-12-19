@@ -1,5 +1,5 @@
 # yoga
-Project: Yoga Payment System
+#Project: Yoga Payment System
 
 Overview
 
@@ -20,20 +20,25 @@ Getting Started
 Follow these steps to set up and run the Yoga Payment System on your local machine:
 
 1.Clone the Repository:
+
 git clone https://github.com/bhanuhu/yoga.git
 cd yoga
 
 2. Install Dependencies:
-# Use your package manager, e.g., npm or yarn
+   
+//Use your package manager, e.g., npm or yarn
 npm install
 
 3.Run the Application:
+
 npm start
 
 4.Configuration:
+
 Change the proxy to local backend server.
 
 5.Access the Application:
+
 Open your web browser and go to http://localhost:3000 to access the Yoga Payment System.
 
 
