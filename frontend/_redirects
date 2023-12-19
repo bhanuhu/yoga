@@ -1,2 +1,2 @@
-/api/* https://yoga-770i.onrender.com 200
+/api/* https://yoga-770i.onrender.com/api/:splat 200
 /* /index.html 200

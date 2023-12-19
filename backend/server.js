@@ -12,11 +12,9 @@ app.use("/",rout)
 
 mongoose.connect(abc)
 .then(()=>{
-    app.listen(port,()=>{
+    app.listen(5050,()=>{
         console.log("listenig at http://localhost:5050/")
-        
-    })
-    
+    })   
 })
 .catch((error)=>{
     console.log(error)
