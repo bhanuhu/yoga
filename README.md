@@ -53,4 +53,4 @@ Change the proxy to local backend server.
 
 Open your web browser and go to http://localhost:3000 to access the Yoga Payment System.    
 
-Happy yoga and happy coding! 🧘💻
+**Happy yoga and happy coding! 🧘💻**
