@@ -15,11 +15,11 @@ Secure Payment Processing: Payment information is handled securely to ensure the
 
 Customizable: The project is highly customizable, allowing yoga instructors or studios to tailor the payment form to meet their specific needs. You can easily adjust settings, add branding elements, and personalize the user interface.
 
-Getting Started
+## Getting Started
 
 Follow these steps to set up and run the Yoga Payment System on your local machine:
 
-1.Clone the Repository:
+### 1.Clone the Repository:
 
 ```bash
 git clone https://github.com/bhanuhu/yoga.git
@@ -27,26 +27,26 @@ git clone https://github.com/bhanuhu/yoga.git
 cd yoga
 ```
 
-2. Install Dependencies:
+### 2. Install Dependencies:
  ```bash  
 Use your package manager, e.g., npm or yarn
 
 npm install
 ```
 
-3.Run the Application:
+### 3.Run the Application:
 ```bash
 npm start
 ```
 
-4.Configuration:
+### 4.Configuration:
 
 Change the proxy to local backend server.
 
 
-5.Access the Application:
+### 5.Access the Application:
 
-Open your web browser and go to http://localhost:3000 to access the Yoga Payment System.
+Open your web browser and go to http://localhost:3000 to access the Yoga Payment System.    
 
 
 
