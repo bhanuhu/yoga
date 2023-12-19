@@ -1,6 +1,8 @@
 # yoga
 Project: Yoga Payment System
+
 Overview
+
 Welcome to the Yoga Payment System project! This project provides a simple and secure way for yoga instructors or studios to receive payments from users through a form. The system is designed to streamline the payment process and enhance the overall user experience.
 
 Features
